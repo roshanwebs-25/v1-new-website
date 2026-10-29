@@ -12,7 +12,7 @@ window.ASFS_DATA = {
     hq: "Hyderabad, Telangana, India",
     ceo: "Mr. Shreekar Reddy",
     phone: "+91 9392806881",
-    email: "admin@v1fs.in",
+    email: "gm@v1fs.in",
     website: "https://v1fs.in",
     whatsapp: "+919392806881",
     instagram: "https://www.instagram.com/v1_facility_services/",
