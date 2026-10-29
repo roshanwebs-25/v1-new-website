@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services — V1 Facility & Security Services</title>
+<meta name="description" content="Security, housekeeping, pest management, gardening and maintenance services from V1 Facility and Security Services — Your Reliable Facility Partner." />
+<link rel="icon" href="https://res.cloudinary.com/dsn3p1co7/image/upload/v1792944021/v1_logo_vxsyja.png" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body data-page="services">
+<div class="loader"><div class="ring"></div></div>
+<div id="nav-mount"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Services</div>
+    <h1>Professional Services for a Safer, Cleaner, Greener Tomorrow</h1>
+    <p>One reliable partner across security, housekeeping, pest management, gardening and maintenance — delivered by well groomed, well trained professionals.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--3" id="full-services"></div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Training &amp; Development</span>
+      <h2>An accredited training program, as per PSARA.</h2>
+      <p>Our services are broadly divided into categories that facilitate engineering management, ideal work ambience and administrative support, attended by a team of well groomed and well trained professionals.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="wc-card reveal"><div class="num">01</div><h3>Security Services</h3><p>Security Officers, Security Supervisors, Security Guards and Lady Guards.</p></div>
+      <div class="wc-card reveal" data-delay="1"><div class="num">02</div><h3>Housekeeping &amp; Soft Services</h3><p>Housekeeping Managers, Executives, Supervisors and Staff, plus Pantry Boys, Office Boys and Runner Boys.</p></div>
+      <div class="wc-card reveal" data-delay="2"><div class="num">03</div><h3>Facility &amp; Support Teams</h3><p>Property Managers, Facility Managers, Facility &amp; Admin Executives, Help Desk and Support Staff.</p></div>
+      <div class="wc-card reveal" data-delay="3"><div class="num">04</div><h3>Electrical, Mechanical &amp; Technical</h3><p>Electrical and HVAC technicians, plumbers, lift and fire technicians, BMS operators, carpenters, masons and painters.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Looking for a reliable facility partner?</h2>
+    <p>Our experienced professionals are committed to delivering efficient, reliable and seamless facility management services. Get in touch with us to strengthen your operations.</p>
+    <div class="hero__cta"><a class="btn btn--primary" href="contact-us.html">Get a Quote →</a><a class="btn btn--ghost" href="industries-we-serve.html">Industries We Serve</a></div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+<script src="data.js"></script>
+<script>
+  const D = window.ASFS_DATA;
+  document.getElementById("full-services").innerHTML = D.services.map((s,i)=>`
+    <article class="svc-card reveal" data-delay="${(i%3)+1}">
+      <div class="svc-card__img"><img src="${s.image}" alt="${s.title}"/><span class="svc-card__icon" data-icon="${s.icon}"></span></div>
+      <div class="svc-card__body"><h3>${s.title}</h3><p>${s.short}</p>
+        <ul>
+  ${s.features.map(f => `<li>${f}</li>`).join("")}
+</ul>
+        <a href="contact-us.html" class="arrow">Request a proposal →</a></div>
+    </article>`).join("");
+</script>
+<script src="partials.js"></script><script src="script.js"></script>
+</body>
+</html>
+

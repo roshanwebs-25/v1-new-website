@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Clients — V1 Facility & Security Services</title>
+
+<meta name="description" content="Trusted by Marriott, L&T Hyderabad Metro, KEOLIS, ITC Infotel, OYO, Mouri Tech, Stanza Living, Suresh Productions and 100+ leading organizations." />
+
+<link rel="icon" href="https://res.cloudinary.com/dsn3p1co7/image/upload/v1792944021/v1_logo_vxsyja.png" />
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body data-page="clients">
+
+<div class="loader">
+  <div class="ring"></div>
+</div>
+
+<div id="nav-mount"></div>
+
+<!-- HERO -->
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Clients</div>
+
+    <h1>Trusted By Leading Organizations</h1>
+
+    <p>
+      From global hospitality leaders and government bodies to
+      fast-scaling start-ups and educational institutions —
+      over 100 organizations rely on us every day.
+    </p>
+  </div>
+</section>
+
+<!-- CLIENT LOGO FLOW -->
+
+<section class="section client-logo-section">
+
+  <div class="container">
+    <div class="section__head reveal">
+
+      
+
+      <h2>Trusted Brands We Serve</h2>
+
+      <p>
+        Leading organizations that trust V1 Facility &
+        Security Services.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="logo-track-wrap">
+    <div class="logo-track" id="client-logo-flow"></div>
+  </div>
+
+</section>
+
+<!-- CLIENT NAMES -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section__head reveal section__head--left">
+
+      <span class="eyebrow">Client Portfolio</span>
+
+      <h2>A partnership ledger we are proud of.</h2>
+
+      <p>
+        And many more trusted partners across India.
+      </p>
+
+    </div>
+
+    <div class="client-grid" id="client-grid"></div>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section section--soft">
+
+  <div class="container">
+
+    <div class="section__head reveal">
+
+      <span class="eyebrow">In Their Words</span>
+
+      <h2>What our clients say.</h2>
+
+    </div>
+
+    <div class="grid grid--3">
+
+      <div class="blog-card reveal" style="padding:32px 30px;">
+
+        <p style="font-family:var(--serif); font-size:1.2rem; color:var(--ink); line-height:1.5;">
+          "Disciplined, dependable and remarkably consistent —
+          exactly what a facility partner should be."
+        </p>
+
+        <p style="margin:0; color:var(--blue-deep); font-weight:600;">
+          — Hospitality Group, Hyderabad
+        </p>
+
+      </div>
+
+      <div class="blog-card reveal" data-delay="1" style="padding:32px 30px;">
+
+        <p style="font-family:var(--serif); font-size:1.2rem; color:var(--ink); line-height:1.5;">
+          "Their response times and SOP discipline make a real difference
+          in our day-to-day operations."
+        </p>
+
+        <p style="margin:0; color:var(--blue-deep); font-weight:600;">
+          — IT Services Client
+        </p>
+
+      </div>
+
+      <div class="blog-card reveal" data-delay="2" style="padding:32px 30px;">
+
+        <p style="font-family:var(--serif); font-size:1.2rem; color:var(--ink); line-height:1.5;">
+          "A truly integrated partner across security,
+          housekeeping and technical services."
+        </p>
+
+        <p style="margin:0; color:var(--blue-deep); font-weight:600;">
+          — Educational Institution
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-band">
+
+  <div class="container">
+
+    <h2>
+      Join 140+ organizations that have made the switch.
+    </h2>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="contact-us.html">
+        Become a Client →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<div id="footer-mount"></div>
+
+<!-- SCRIPTS -->
+
+<script src="data.js"></script>
+
+<script>
+
+const D = window.ASFS_DATA;
+
+/* LOGO FLOW */
+
+const logoFlow = document.getElementById("client-logo-flow");
+
+if (logoFlow && D.logoClients) {
+
+  const logos = [
+    ...D.logoClients,
+    ...D.logoClients,
+    ...D.logoClients
+  ];
+
+  logoFlow.innerHTML = logos.map(client => `
+    <div class="logo-card">
+      <img src="${client.logo}" alt="${client.name}">
+    </div>
+  `).join("");
+}
+
+/* TEXT CLIENTS */
+
+const clientGrid = document.getElementById("client-grid");
+
+if (clientGrid && D.clients) {
+
+  clientGrid.innerHTML = D.clients.map((c, i) => `
+    <div class="client-tile reveal-zoom" data-delay="${(i % 4) + 1}">
+      ${c}
+    </div>
+  `).join("");
+}
+
+</script>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

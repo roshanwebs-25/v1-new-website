@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — V1 Facility & Security Services</title>
+<meta name="description" content="Contact V1 Facility and Security Services Pvt Ltd, Hyderabad. Call +91 9392806881 or email admin@v1fs.in." />
+<link rel="icon" href="https://res.cloudinary.com/dsn3p1co7/image/upload/v1792944021/v1_logo_vxsyja.png" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<style>
+/* ================= V1 CONTACT — cinematic lime + black ================= */
+body[data-page="contact"]{--lm:#9ccc2e;--lm2:#c6e45c;--lm-rgb:156,204,46;--bk:#040807;--bk2:#08120d;--tx:#eef5ee;--tx2:rgba(238,245,238,.82);background:var(--bk)!important;color:var(--tx)}
+.cx-wrap{width:min(1180px,92%);margin:0 auto;position:relative;z-index:2}
+.cx-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(800px 500px at 85% 8%,rgba(var(--lm-rgb),.13),transparent 65%),radial-gradient(700px 500px at 5% 60%,rgba(127,208,255,.05),transparent 60%),var(--bk)}
+.cx-bg::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(var(--lm-rgb),.035) 0 1px,transparent 1px 110px),repeating-linear-gradient(0deg,rgba(var(--lm-rgb),.035) 0 1px,transparent 1px 110px);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 75%)}
+main.cx{position:relative;z-index:1}
+.cx h1,.cx h2,.cx h3{font-family:var(--serif,"Cormorant Garamond",Georgia,serif);color:#fff;font-weight:500;letter-spacing:-.02em;line-height:1.05;margin:0}
+.cx p{color:var(--tx2);line-height:1.7;margin:0}
+.cx-tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lm2);padding:.5rem .95rem;border:1px solid rgba(var(--lm-rgb),.4);background:rgba(var(--lm-rgb),.09);border-radius:999px;margin-bottom:20px}
+
+/* buttons */
+.cx-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid rgba(var(--lm-rgb),.5);color:#fff;background:rgba(var(--lm-rgb),.07);cursor:pointer;font-family:inherit;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,background .3s}
+.cx-btn:hover{background:rgba(var(--lm-rgb),.2);transform:translateY(-2px)}
+.cx-btn--lime{background:linear-gradient(135deg,#c6e45c,#9ccc2e 55%,#7fae1c);color:#07100a;border-color:transparent;box-shadow:0 12px 32px -10px rgba(var(--lm-rgb),.7),inset 0 1px 0 rgba(255,255,255,.45)}
+.cx-btn--lime:hover{background:linear-gradient(135deg,#d6ee78,#a9d93a 55%,#8fc31f);box-shadow:0 18px 46px -10px rgba(var(--lm-rgb),.8)}
+.cx-btn--lime::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);transition:transform .9s}
+.cx-btn--lime:hover::after{transform:translateX(120%)}
+.cx a:focus-visible,.cx button:focus-visible,.cx input:focus-visible,.cx select:focus-visible{outline:2px solid var(--lm2);outline-offset:3px}
+
+/* hero */
+.cx-hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:150px 0 110px;overflow:hidden;perspective:1200px}
+.cx-hero .cx-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center}
+.cx-crumb{font-size:.85rem;color:rgba(238,245,238,.65);margin-bottom:18px}
+.cx-hero h1{font-size:clamp(2.8rem,6.4vw,5.4rem);margin-bottom:22px}
+.cx-hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em}
+.cx-hero h1 .w i{display:inline-block;font-style:normal;transform:translateY(110%) rotateX(-55deg);transform-origin:0 100%;animation:cxup 1.1s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(.2s + var(--i)*.1s)}
+@keyframes cxup{to{transform:none}}
+.cx-hero .lead{font-size:1.12rem;max-width:520px;margin-bottom:30px}
+.cx-chips{display:flex;flex-wrap:wrap;gap:12px}
+.cx-gl{width:100%;aspect-ratio:1;max-width:640px;justify-self:end;opacity:0;animation:cxfade 2s .5s forwards}
+@keyframes cxfade{to{opacity:1}}
+.cx-floor{position:absolute;left:-20%;right:-20%;bottom:0;height:42%;pointer-events:none;transform:perspective(500px) rotateX(62deg);transform-origin:50% 100%;background:repeating-linear-gradient(90deg,rgba(var(--lm-rgb),.22) 0 1px,transparent 1px 90px),repeating-linear-gradient(0deg,rgba(var(--lm-rgb),.22) 0 1px,transparent 1px 90px);-webkit-mask-image:linear-gradient(0deg,transparent,#000 70%);mask-image:linear-gradient(0deg,transparent,#000 70%);animation:cxroll 6s linear infinite}
+@keyframes cxroll{to{background-position:0 90px,0 90px}}
+.cx-beam{position:absolute;top:-25%;left:52%;width:170px;height:150%;background:linear-gradient(180deg,transparent,rgba(var(--lm-rgb),.14),transparent);transform:rotate(24deg);filter:blur(26px);animation:cxbeam 9s ease-in-out infinite alternate;pointer-events:none}
+@keyframes cxbeam{to{transform:rotate(13deg) translateX(-150px);opacity:.5}}
+.cx-scroll{position:absolute;left:50%;bottom:26px;width:1px;height:50px;background:linear-gradient(180deg,var(--lm2),transparent);animation:cxsc 2s infinite}
+@keyframes cxsc{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* stats */
+.cx-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-50px}
+.cx-stat{text-align:center;padding:26px 14px;border-radius:16px;background:linear-gradient(165deg,rgba(20,34,25,.94),rgba(6,11,9,.97));border:1px solid rgba(var(--lm-rgb),.22);box-shadow:0 30px 60px -24px #000}
+.cx-stat b{display:block;font-family:var(--serif,Georgia,serif);font-weight:500;font-size:clamp(2rem,3.6vw,3rem);background:linear-gradient(120deg,#fff,var(--lm2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cx-stat span{font-size:.86rem;color:var(--tx2)}
+
+/* sections */
+.cx-sec{padding:110px 0 20px}
+.cx-head{max-width:640px;margin-bottom:46px}
+.cx-head h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:14px}
+.cx-r{opacity:0;transform:translateY(46px) rotateX(12deg);transform-origin:50% 100%;transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.cx-r.in{opacity:1;transform:none}
+.cx-grid3d{perspective:1400px}
+
+/* glass card + edge light */
+.cx-card{position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(165deg,rgba(20,34,25,.95),rgba(6,11,9,.98));border:1px solid rgba(var(--lm-rgb),.2);box-shadow:0 40px 80px -30px #000,inset 0 1px 0 rgba(255,255,255,.06);transform-style:preserve-3d;will-change:transform}
+.cx-card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;pointer-events:none;z-index:3;opacity:0;transition:opacity .4s;background:radial-gradient(260px circle at var(--sx,50%) var(--sy,50%),var(--lm2),rgba(var(--lm-rgb),.25) 45%,transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.cx-card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(320px circle at var(--sx,50%) var(--sy,50%),rgba(var(--lm-rgb),.13),transparent 70%)}
+.cx-card:hover::before,.cx-card:hover::after{opacity:1}
+.cx-card>*{position:relative;z-index:2}
+
+/* main grid */
+.cx-main{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.cx-form{padding:40px 36px;display:grid;gap:22px}
+.cx-form h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+.cx-field label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--lm2);margin-bottom:8px}
+.cx-field input,.cx-field select{width:100%;padding:16px 18px;border-radius:12px;border:1px solid rgba(var(--lm-rgb),.25);background:rgba(2,6,4,.75);color:#fff;font:500 1rem Inter,system-ui,sans-serif;transition:border-color .3s,box-shadow .3s,background .3s}
+.cx-field input::placeholder{color:rgba(238,245,238,.45)}
+.cx-field select option{background:#0a130e;color:#fff}
+.cx-field input:focus,.cx-field select:focus{outline:none;border-color:var(--lm2);box-shadow:0 0 0 4px rgba(var(--lm-rgb),.16),0 0 30px -6px rgba(var(--lm-rgb),.5);background:rgba(4,10,7,.95)}
+.cx-field.flash select{animation:cxflash 1.2s}
+@keyframes cxflash{30%{box-shadow:0 0 0 5px rgba(var(--lm-rgb),.5),0 0 40px rgba(var(--lm-rgb),.6)}}
+.cx-note{font-size:.84rem;color:rgba(238,245,238,.6)}
+.cx-info{display:grid;gap:16px}
+.cx-row{display:flex;gap:16px;align-items:center;padding:22px 22px}
+.cx-ico{flex:none;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#c6e45c,#8fc31f);color:#07100a;box-shadow:0 10px 24px -8px rgba(var(--lm-rgb),.6);transform:translateZ(30px)}
+.cx-ico svg{width:24px;height:24px}
+.cx-row span{display:block;font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lm2);margin-bottom:3px}
+.cx-row strong{color:#fff;font-weight:500;font-size:1.02rem;word-break:break-word;line-height:1.45}
+.cx-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* service chips */
+.cx-svc{display:flex;flex-wrap:wrap;gap:12px}
+.cx-svc button{padding:13px 20px;border-radius:999px;border:1px solid rgba(var(--lm-rgb),.3);background:rgba(var(--lm-rgb),.06);color:#fff;font:500 .92rem Inter,system-ui,sans-serif;cursor:pointer;transition:transform .3s,background .3s,border-color .3s,box-shadow .3s}
+.cx-svc button:hover{background:rgba(var(--lm-rgb),.2);border-color:var(--lm2);transform:translateY(-3px);box-shadow:0 14px 30px -12px rgba(var(--lm-rgb),.6)}
+
+/* process */
+.cx-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
+.cx-steps::before{content:"";position:absolute;left:8%;right:8%;top:56px;height:1px;background:linear-gradient(90deg,transparent,var(--lm),transparent);box-shadow:0 0 14px rgba(var(--lm-rgb),.6);transform:scaleX(var(--ln,0));transform-origin:left}
+.cx-step{padding:30px 26px;min-height:210px}
+.cx-step .n{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:600 1.1rem Inter,sans-serif;color:#07100a;background:linear-gradient(135deg,#c6e45c,#8fc31f);box-shadow:0 0 0 6px rgba(var(--lm-rgb),.14),0 10px 28px -8px rgba(var(--lm-rgb),.7);margin-bottom:22px;transform:translateZ(30px)}
+.cx-step h3{font-size:1.5rem;margin-bottom:10px}
+
+/* map */
+.cx-map{padding:10px;border-radius:24px}
+.cx-map iframe{display:block;width:100%;height:440px;border:0;border-radius:16px;filter:grayscale(1) invert(.92) hue-rotate(70deg) contrast(.95) brightness(.95);transition:filter .8s}
+.cx-map:hover iframe{filter:none}
+.cx-pin{position:absolute!important;left:28px;bottom:28px;z-index:5;padding:14px 18px;border-radius:14px;background:rgba(4,8,6,.88);border:1px solid rgba(var(--lm-rgb),.4);backdrop-filter:blur(10px);pointer-events:none}
+.cx-pin b{display:block;color:#fff;font-weight:600}.cx-pin small{color:var(--lm2)}
+
+/* final CTA */
+.cx-final{margin:110px 0 90px;padding:70px 30px;text-align:center;border-radius:28px;background:radial-gradient(600px 260px at 50% 0,rgba(var(--lm-rgb),.25),transparent 70%),linear-gradient(165deg,#0e1a13,#050a07);border:1px solid rgba(var(--lm-rgb),.3);box-shadow:0 50px 100px -40px #000,0 0 80px -30px rgba(var(--lm-rgb),.5)}
+.cx-final h2{font-size:clamp(2rem,4.4vw,3.4rem);margin-bottom:14px}
+.cx-final p{max-width:560px;margin:0 auto 28px}
+.cx-final .cx-actions{justify-content:center}
+
+@media(max-width:960px){.cx-hero .cx-wrap{grid-template-columns:1fr}.cx-gl{position:absolute;right:-30%;top:12%;width:100%;opacity:.4!important;animation:none;z-index:0}.cx-hero .cx-wrap>div:first-child{position:relative;z-index:2}
+.cx-main{grid-template-columns:1fr}.cx-stats{grid-template-columns:repeat(2,1fr)}.cx-steps{grid-template-columns:1fr}.cx-steps::before{display:none}.cx-hero{min-height:auto}}
+@media(max-width:520px){.cx-form{padding:30px 22px}.cx-map iframe{height:340px}}
+@media(prefers-reduced-motion:reduce){.cx-r{opacity:1;transform:none;transition:none}.cx-floor,.cx-beam,.cx-scroll{animation:none}.cx-hero h1 .w i{animation:none;transform:none}.cx-gl{animation:none;opacity:1}}
+</style>
+</head>
+
+<body data-page="contact">
+<div class="loader"><div class="ring"></div></div>
+<div id="nav-mount"></div>
+<div class="cx-bg" aria-hidden="true"></div>
+
+<main class="cx">
+
+<!-- ================= HERO ================= -->
+<section class="cx-hero">
+  <i class="cx-beam"></i><i class="cx-floor"></i>
+  <div class="cx-wrap">
+    <div>
+      <div class="cx-crumb">Home / Contact</div>
+      <h1 id="cx-h1">Let's Talk About Your Facility.</h1>
+      <p class="lead">Share your requirements with our team and we will get back to you. Your Reliable Facility Partner.</p>
+      <div class="cx-chips">
+        <a class="cx-btn cx-btn--lime js-call" href="#">📞 Call Now</a>
+        <a class="cx-btn js-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="cx-btn" href="#cx-form-sec">Send an Enquiry ↓</a>
+      </div>
+    </div>
+    <canvas class="cx-gl" id="cx-gl" aria-hidden="true"></canvas>
+  </div>
+  <div class="cx-scroll"></div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="cx-wrap">
+  <div class="cx-stats cx-grid3d">
+    <div class="cx-stat cx-r"><b data-n="3000" data-s="+">0</b><span>Trained Professionals</span></div>
+    <div class="cx-stat cx-r" style="--d:.08s"><b data-n="100" data-s="+">0</b><span>Reputed Organizations</span></div>
+    <div class="cx-stat cx-r" style="--d:.16s"><b data-n="8" data-s="">0</b><span>States Covered</span></div>
+    <div class="cx-stat cx-r" style="--d:.24s"><b>24/7</b><span>Security Personnel</span></div>
+  </div>
+</div>
+
+<!-- ================= FORM + INFO ================= -->
+<section class="cx-sec" id="cx-form-sec">
+  <div class="cx-wrap cx-main cx-grid3d">
+
+    <form class="cx-card cx-form cx-r" id="contact-form" data-tilt="5">
+      <div>
+        <span class="cx-tag">Enquiry</span>
+        <h2>Tell us what you need.</h2>
+      </div>
+      <div class="cx-field">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="Your full name" autocomplete="name" />
+      </div>
+      <div class="cx-field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required placeholder="+91" autocomplete="tel" />
+      </div>
+      <div class="cx-field" id="cx-sel">
+        <label for="service">Select Service</label>
+        <select id="service" required>
+          <option value="">Select Service</option>
+          <option>Professional Security Services</option>
+          <option>Housekeeping Services</option>
+          <option>Integrated Pest Management</option>
+          <option>Gardening & Landscaping</option>
+          <option>Maintenance Services</option>
+          <option>Facility Management</option>
+          <option>Technical Services</option>
+          <option>Support Services</option>
+        </select>
+      </div>
+      <button type="submit" class="cx-btn cx-btn--lime" style="justify-self:start;">Submit Enquiry</button>
+      <p class="cx-note">Your enquiry opens in WhatsApp so our team can reply to you directly.</p>
+    </form>
+
+    <div class="cx-info cx-r" style="--d:.12s">
+      <div>
+        <span class="cx-tag">Reach Us</span>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:6px">We'd love to hear from you.</h2>
+      </div>
+      <div class="cx-card cx-row" data-tilt="8"><div class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><div><span>Phone</span><strong id="c_phone"></strong></div></div>
+      <div class="cx-card cx-row" data-tilt="8"><div class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><span>Email</span><strong id="c_email"></strong></div></div>
+      <div class="cx-card cx-row" data-tilt="8"><div class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><div><span>Website</span><strong id="c_web"></strong></div></div>
+      <div class="cx-card cx-row" data-tilt="8"><div class="cx-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><span>Head Office</span><strong id="c_hq"></strong></div></div>
+      <div class="cx-actions">
+        <a class="cx-btn cx-btn--lime" id="c_call" href="#">📞 Call Now</a>
+        <a class="cx-btn" id="c_wa" href="#" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE SHORTCUTS (new) ================= -->
+<section class="cx-sec">
+  <div class="cx-wrap">
+    <div class="cx-head cx-r">
+      <span class="cx-tag">Our Services</span>
+      <h2>Pick a service to start your enquiry.</h2>
+      <p>Choose one below and we'll fill it in for you.</p>
+    </div>
+    <div class="cx-svc cx-r" id="cx-svc" style="--d:.1s"></div>
+  </div>
+</section>
+
+<!-- ================= PROCESS (new) ================= -->
+<section class="cx-sec">
+  <div class="cx-wrap">
+    <div class="cx-head cx-r">
+      <span class="cx-tag">What happens next</span>
+      <h2>From your first message to a working partnership.</h2>
+    </div>
+    <div class="cx-steps cx-grid3d" id="cx-steps">
+      <div class="cx-card cx-step cx-r" data-tilt="8"><div class="n">1</div><h3>Share your requirement</h3><p>Send us your name, phone and the service you need through the form, call or WhatsApp.</p></div>
+      <div class="cx-card cx-step cx-r" style="--d:.12s" data-tilt="8"><div class="n">2</div><h3>We review your premises</h3><p>Our team gets in touch to understand your site, staffing and compliance needs.</p></div>
+      <div class="cx-card cx-step cx-r" style="--d:.24s" data-tilt="8"><div class="n">3</div><h3>Get a tailored proposal</h3><p>Receive a clear proposal, then trained professionals are deployed to your facility.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section class="cx-sec">
+  <div class="cx-wrap">
+    <div class="cx-head cx-r">
+      <span class="cx-tag">Visit Us</span>
+      <h2>Find us in Hyderabad.</h2>
+    </div>
+    <div class="cx-card cx-map cx-r" style="--d:.1s" data-tilt="3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5693008590433!2d78.42724127493575!3d17.432445183462484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91507953cc87%3A0xb0c29b6627262b22!2sV1%20FACILITY%20SERVICES!5e0!3m2!1sen!2sin!4v1793280483446!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="V1 Facility Services location"></iframe>
+      <div class="cx-pin"><b>V1 Facility &amp; Security Services</b><small>Head Office, Hyderabad</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA (new) ================= -->
+<div class="cx-wrap">
+  <div class="cx-final cx-r">
+    <h2>Your Reliable Facility Partner is one message away.</h2>
+    <p>Our experienced professionals are ready to support your operations.</p>
+    <div class="cx-actions">
+      <a class="cx-btn cx-btn--lime js-call" href="#">📞 Call Now</a>
+      <a class="cx-btn js-wa" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<div id="footer-mount"></div>
+
+<script src="data.js"></script>
+
+<script>
+  const D = window.ASFS_DATA;
+
+  c_phone.textContent = D.company.phone;
+  c_email.textContent = D.company.email;
+  c_web.textContent = D.company.website.replace("https://","");
+  c_hq.textContent = D.company.hq;
+
+  c_call.href = "tel:" + D.company.phone.replace(/\s/g,"");
+  c_wa.href = "https://wa.me/919966998182";
+
+  /* hero + final-CTA buttons reuse the same original call / WhatsApp links */
+  document.querySelectorAll(".js-call").forEach(function(a){a.href = c_call.href;});
+  document.querySelectorAll(".js-wa").forEach(function(a){a.href = c_wa.href;});
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+
+    const whatsappNumber = "919966998182";
+
+    const message = `Hi, I am ${name}. My phone number is ${phone}. I am interested in ${service}. Please contact me.`;
+
+    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  });
+</script>
+
+<script src="partials.js"></script>
+<script src="script.js"></script>
+
+<!-- ================= CONTACT PAGE MOTION ================= -->
+<script>
+(function(){
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var fine = matchMedia("(hover:hover) and (pointer:fine)").matches;
+  var small = innerWidth < 960;
+
+  /* service shortcut chips -> fill the form */
+  var sel = document.getElementById("service"), box = document.getElementById("cx-svc");
+  [].slice.call(sel.options).slice(1).forEach(function(o){
+    var b = document.createElement("button"); b.type = "button"; b.textContent = o.text;
+    b.addEventListener("click", function(){
+      sel.value = o.value || o.text;
+      var f = document.getElementById("cx-sel"); f.classList.remove("flash"); void f.offsetWidth; f.classList.add("flash");
+      document.getElementById("cx-form-sec").scrollIntoView({behavior: reduce ? "auto" : "smooth", block: "center"});
+    });
+    box.appendChild(b);
+  });
+
+  /* reveal on scroll */
+  var io = new IntersectionObserver(function(l){l.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll(".cx-r").forEach(function(el){io.observe(el);});
+
+  /* count-up stats */
+  var nio = new IntersectionObserver(function(l){l.forEach(function(e){
+    if(!e.isIntersecting) return; nio.unobserve(e.target);
+    var el=e.target, to=+el.dataset.n, s=el.dataset.s||"", t0=performance.now();
+    (function step(t){var p=Math.min(1,(t-t0)/1600),k=1-Math.pow(1-p,3);el.textContent=Math.round(to*k)+s;if(p<1)requestAnimationFrame(step);})(t0);
+  });},{threshold:.6});
+  document.querySelectorAll("[data-n]").forEach(function(el){ if(reduce){el.textContent=el.dataset.n+(el.dataset.s||"");} else nio.observe(el); });
+
+  /* process line draws as you scroll */
+  var steps = document.getElementById("cx-steps");
+  function scrollFx(){
+    var r = steps.getBoundingClientRect(), p = Math.max(0, Math.min(1, (innerHeight - r.top) / (innerHeight * .8)));
+    steps.style.setProperty("--ln", p.toFixed(3));
+  }
+  addEventListener("scroll", scrollFx, {passive:true}); scrollFx();
+
+  /* headline word reveal */
+  var h1 = document.getElementById("cx-h1");
+  if(!reduce){ var txt = h1.textContent.trim().split(/\s+/); h1.innerHTML = txt.map(function(w,i){return '<span class="w" style="--i:'+i+'"><i>'+w+'</i></span>';}).join(" "); }
+
+  /* 3D tilt + cursor light on cards */
+  if(fine && !reduce) document.querySelectorAll(".cx-card").forEach(function(c){
+    var max = +c.dataset.tilt || 0;
+    c.addEventListener("mousemove", function(e){
+      var r = c.getBoundingClientRect(), x = (e.clientX-r.left)/r.width, y = (e.clientY-r.top)/r.height;
+      c.style.setProperty("--sx", x*100+"%"); c.style.setProperty("--sy", y*100+"%");
+      if(max){ c.style.transition="transform .08s linear"; c.style.transform="perspective(900px) rotateX("+(.5-y)*max+"deg) rotateY("+(x-.5)*max*1.2+"deg) translateZ(10px)"; }
+    });
+    c.addEventListener("mouseleave", function(){ c.style.transition="transform .6s cubic-bezier(.2,.7,.2,1)"; c.style.transform=""; });
+  });
+
+  /* hero 3D globe: wire sphere, orbit rings, Hyderabad beacon, floor reflection */
+  var cv = document.getElementById("cx-gl"); if(!cv || reduce && false) return;
+  var g = cv.getContext("2d"), dpr = Math.min(devicePixelRatio||1, small?1.25:1.5), S, pts=[], rings=[], dust=[], mx=0,my=0,tx=0,ty=0,t=0,on=true,i,j;
+  function size(){ S = cv.width = cv.height = Math.round(cv.clientWidth*dpr)||600; }
+  var LAT = small?9:13, LON = small?20:30;
+  for(i=1;i<LAT;i++) for(j=0;j<LON;j++){ var la=Math.PI*i/LAT-Math.PI/2, lo=2*Math.PI*j/LON; pts.push([Math.cos(la)*Math.cos(lo),Math.sin(la),Math.cos(la)*Math.sin(lo)]); }
+  [[1.5,.5,0,0],[1.75,-.7,.6,1],[2.0,.2,-.9,0]].forEach(function(r){
+    var a=[],n=small?70:120;
+    for(i=0;i<=n;i++){var u=i/n*6.2832,x=Math.cos(u)*r[0],z=Math.sin(u)*r[0],y1=-z*Math.sin(r[1]),z1=z*Math.cos(r[1]);a.push([x*Math.cos(r[2])-y1*Math.sin(r[2]),x*Math.sin(r[2])+y1*Math.cos(r[2]),z1]);}
+    rings.push({p:a,c:r[3]});
+  });
+  for(i=0;i<(small?40:80);i++) dust.push([(Math.random()-.5)*6,(Math.random()-.5)*4,(Math.random()-.5)*6,Math.random()]);
+  var la0 = 17.4*Math.PI/180, lo0 = 78.4*Math.PI/180, HQ=[Math.cos(la0)*Math.cos(lo0),Math.sin(la0),Math.cos(la0)*Math.sin(lo0)];
+  function P(p,ry,rx,flip){
+    var x=p[0]*Math.cos(ry)+p[2]*Math.sin(ry), z=-p[0]*Math.sin(ry)+p[2]*Math.cos(ry), y=p[1];
+    var y2=y*Math.cos(rx)-z*Math.sin(rx), z2=y*Math.sin(rx)+z*Math.cos(rx);
+    if(flip) y2=-y2-2.5;
+    var k=S*.42/(4.6-z2); return [S/2+x*k, S*.46-y2*k, (z2+2.2)/4.4, k];
+  }
+  function draw(){
+    g.clearRect(0,0,S,S); t+=.0035; mx+=(tx-mx)*.05; my+=(ty-my)*.05;
+    var ry=t+mx*.9, rx=.32+my*.4;
+    g.globalCompositeOperation="lighter";
+    var c=P([0,0,0],ry,rx), cg=g.createRadialGradient(c[0],c[1],0,c[0],c[1],S*.3);
+    cg.addColorStop(0,"rgba(156,204,46,.22)"); cg.addColorStop(1,"rgba(156,204,46,0)"); g.fillStyle=cg; g.fillRect(0,0,S,S);
+    [0,1].forEach(function(flip){
+      var A=flip?.22:1;
+      rings.forEach(function(r,ri){
+        var pr=r.p.map(function(p){return P(p,ry*(ri%2?-1.3:1.6),rx,flip);});
+        for(var k=1;k<pr.length;k++){
+          var d=Math.max(0,Math.min(1,(pr[k][2]+pr[k-1][2])/2));
+          g.strokeStyle=r.c?"rgba(127,208,255,"+(.12+d*.5)*A+")":"rgba(198,228,92,"+(.1+d*.6)*A+")";
+          g.lineWidth=(1+d*1.6)*dpr; g.beginPath(); g.moveTo(pr[k-1][0],pr[k-1][1]); g.lineTo(pr[k][0],pr[k][1]); g.stroke();
+        }
+      });
+      pts.forEach(function(p){var q=P(p,ry,rx,flip),d=Math.max(0,Math.min(1,q[2]));g.fillStyle="rgba(170,214,70,"+(.08+d*d*.85)*A+")";var s=(.8+d*2.2)*dpr;g.fillRect(q[0]-s/2,q[1]-s/2,s,s);});
+    });
+    /* Hyderabad beacon: pulsing rings when it faces the camera */
+    var h=P(HQ,ry,rx), front=h[2]>.5;
+    if(front){
+      var pulse=(t*40)%1, a=(h[2]-.5)*2;
+      g.fillStyle="rgba(230,250,170,"+a+")"; g.beginPath(); g.arc(h[0],h[1],4*dpr,0,6.283); g.fill();
+      for(var q2=0;q2<2;q2++){var pp=(pulse+q2*.5)%1; g.strokeStyle="rgba(198,228,92,"+(1-pp)*.7*a+")"; g.lineWidth=1.5*dpr; g.beginPath(); g.arc(h[0],h[1],(6+pp*34)*dpr,0,6.283); g.stroke();}
+      g.globalCompositeOperation="source-over"; g.fillStyle="rgba(238,245,238,"+a+")"; g.font="600 "+(11*dpr)+"px Inter,sans-serif"; g.fillText("HYDERABAD HQ",h[0]+14*dpr,h[1]+4*dpr); g.globalCompositeOperation="lighter";
+    }
+    dust.forEach(function(p){p[1]+=.0015+p[3]*.002;if(p[1]>2)p[1]=-2;var q=P(p,ry*.4,rx),d=Math.max(0,Math.min(1,q[2]));g.fillStyle="rgba(216,240,150,"+d*.5+")";g.fillRect(q[0],q[1],(.6+p[3]*1.4)*dpr,(.6+p[3]*1.4)*dpr);});
+    g.globalCompositeOperation="source-over";
+  }
+  function loop(){ if(!on) return; draw(); if(!reduce) requestAnimationFrame(loop); }
+  new IntersectionObserver(function(l){var v=l[0].isIntersecting; if(v&&!on){on=true;loop();} on=v;}).observe(cv);
+  cv.parentElement.addEventListener("mousemove", function(e){var r=cv.getBoundingClientRect();tx=(e.clientX-r.left)/r.width-.5;ty=(e.clientY-r.top)/r.height-.5;});
+  addEventListener("resize", size); size(); loop();
+})();
+</script>
+</body>
+</html>

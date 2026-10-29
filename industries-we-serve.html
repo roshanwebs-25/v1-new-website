@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Industries We Serve — V1 Facility & Security Services</title>
+<meta name="description" content="V1 Facility and Security Services serves IT, corporate, hospitality, healthcare, education, government, industrial, residential and construction clients." />
+<link rel="icon" href="https://res.cloudinary.com/dsn3p1co7/image/upload/v1792944021/v1_logo_vxsyja.png" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body data-page="industries">
+<div class="loader"><div class="ring"></div></div>
+<div id="nav-mount"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumbs">Home / Industries</div>
+    <h1>Industries We Serve</h1>
+    <p>We serve clients across diverse industries — from IT MNCs, hotels, schools and hospitals to government bodies, residences and construction projects — delivering reliable services tailored to their needs.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--4" id="ind-grid"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Different sector. Same reliable partner.</h2>
+    <p>Tell us about your premises and what you need. Our experienced professionals are ready to support your operations.</p>
+    <div class="hero__cta"><a class="btn btn--primary" href="contact-us.html">Talk To Us →</a></div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+<script src="data.js"></script>
+<script>
+  const D = window.ASFS_DATA;
+  document.getElementById("ind-grid").innerHTML = D.industries.map((it,i)=>`
+    <div class="ind-card reveal" data-delay="${(i%4)+1}"><img src="${it.image}" alt="${it.title}" loading="lazy"/><h3>${it.title}</h3></div>`).join("");
+</script>
+<script src="partials.js"></script><script src="script.js"></script>
+</body>
+</html>
+
