@@ -182,3 +182,26 @@ html body .hero h1{font-size:clamp(2.6rem,5.4vw,5rem)}
   .v1-snd{right:14px;bottom:18px;top:auto}
   html body .hero__scroll{display:none}
 }
+
+/* ===== SERVICE CARD IMAGES: show full image (PC + mobile) ===== */
+html body .svc-card__img{
+  position:relative !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  overflow:hidden;
+}
+html body .svc-card__img img{
+  position:static !important;
+  display:block;
+  width:100% !important;
+  height:auto !important;
+  max-width:100% !important;
+  object-fit:contain !important;
+  scale:1 !important;
+  translate:none !important;
+  transform:none !important;
+  inset:auto !important;
+}
+
+
