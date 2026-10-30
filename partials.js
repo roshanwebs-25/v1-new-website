@@ -8,6 +8,12 @@
   if(["services","why","industries"].indexOf(document.body.dataset.page)>-1){
     var c=document.createElement("link");c.rel="stylesheet";c.href="immersive.css";h.appendChild(c);
     var m=document.createElement("script");m.src="immersive.js";document.body.appendChild(m);}
+
+  /* Cinematic service cards: Home + Services */
+  if(["home","services"].indexOf(document.body.dataset.page)>-1){
+    var k=document.createElement("link");k.rel="stylesheet";k.href="svc-cinema.css";h.appendChild(k);
+    var q=document.createElement("script");q.src="svc-cinema.js";document.body.appendChild(q);
+  }
 })();
 /* Shared nav + footer for inner pages (auto-injected) */
 (function () {
